@@ -1,4 +1,4 @@
-package PizzaController;
+package Domain;
 
 public class Ordre {
     private int date;
