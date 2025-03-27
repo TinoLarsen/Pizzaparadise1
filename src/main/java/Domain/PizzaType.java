@@ -1,6 +1,7 @@
 package Domain;
 
 public class PizzaType {
+    private int id;
     private String topping;
     private Boolean familySize;
     private Boolean vegetarian;
@@ -9,8 +10,8 @@ public class PizzaType {
     private String description;
     private String nameOfPizza;
 
-    public PizzaType(String topping, Boolean family, Boolean vegetarian, String size, int price, String description, String nameOfPizza) {
-
+    public PizzaType(int id,String topping, Boolean family, Boolean vegetarian, String size, int price, String description, String nameOfPizza) {
+        this.id = id;
         this.topping = topping;
         this.familySize = family;
         this.vegetarian = vegetarian;
@@ -49,10 +50,7 @@ public class PizzaType {
     public void setPrice(int price) {
         this.price = price;
     }
-    public String getDescription() {
-        return description;
-
-    }
+    public String getDescription() {return description;}
     public void setDescription(String description) {
         this.description = description;
     }
@@ -62,4 +60,6 @@ public class PizzaType {
     public void setNameOfPizza(String nameOfPizza) {
         this.nameOfPizza = nameOfPizza;
     }
+    public int getId() {return id;}
+    public void setId(int id) {this.id = id;}
 }
