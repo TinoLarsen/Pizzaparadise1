@@ -2,9 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Choose your pizza</title>
 </head>
 <body>
+<h1>Choose from here</h1>
+<tr
 
+th:each="pizza : ${pizzas}">
+
+        <td th:text="${pizza.name}"></td>
+        <td th:text="${pizza.description}"></td>
+        <td th:text="${pizza.price}"></td>
+        <td><a th:href="@{/pizza/{id}(id=${pizza.id})}">Choose</a></td>
+    </tr>
 </body>
 </html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit pizza</title>
+</head>
+<body>
+<h1>Edit pizza</h1>
+<form action="#" th:action="@{/edit}" th:object="${pizzaType}" method="post"><input type="text" th:field="*{pizza.name}" placeholder="Navn">
+    <input type="text" th:field="*{pizza.description}" placeholder="Beskrivelse">
+    <input type="submit">
+
+
+</form>
+
+
+</body>
+</html>
